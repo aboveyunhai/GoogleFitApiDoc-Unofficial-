@@ -84,20 +84,23 @@ https://www.googleapis.com/fitness/v1/users/userId/dataset:aggregate
 ```
 com.google.sleep.segment
 ```
-### Rest Api: </br>
 **OAuth Scope**:
 ```
 https://www.googleapis.com/auth/fitness.sleep.read
 https://www.googleapis.com/auth/fitness.sleep.write
 ```
+### Rest Api: </br>
 **Request url**:
 ```
 https://www.googleapis.com/fitness/v1/users/userId/dataset:aggregate
 ```
-**Request body**: <br/>
+**Request body**: 
+
 Similar to **Move Minutes**
 just change `"dataTypeName": "com.google.active_minutes"` to `"dataTypeName": com.google.sleep.segment` in **Request body**
-**Request response**: <br/>
+
+**Request response**: 
+
 Similar to **Move Minutes**, but `intVal`(from 1-6) for sleep holds its own meaning:
 | Sleep stage type | Value |
 | ------------- | ------------- |
