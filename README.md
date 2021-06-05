@@ -1,5 +1,6 @@
 # GoogleFitApiDoc(Unofficial)
-Personal Android/Rest Api note/example for badly written Google Fit official Doc,
+Personal Android/Rest Api note/example for badly written Google Fit official Doc
+PR welcome
 
 ## Move Minute
 **Name**
