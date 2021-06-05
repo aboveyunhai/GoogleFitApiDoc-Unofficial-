@@ -7,11 +7,15 @@ PR welcome
 ```
 com.google.active_minutes
 ```
-### Rest Api: </br>
 **OAuth Scope**:
 ```
 https://www.googleapis.com/auth/fitness.activity.read
 https://www.googleapis.com/auth/fitness.activity.write
+```
+### Rest Api: </br>
+**HTTP method**:
+```
+POST
 ```
 **Request url**:
 ```
@@ -74,3 +78,35 @@ https://www.googleapis.com/fitness/v1/users/userId/dataset:aggregate
   ]
 }
 ```
+
+## Sleep
+**Name**
+```
+com.google.sleep.segment
+```
+### Rest Api: </br>
+**OAuth Scope**:
+```
+https://www.googleapis.com/auth/fitness.sleep.read
+https://www.googleapis.com/auth/fitness.sleep.write
+```
+**Request url**:
+```
+https://www.googleapis.com/fitness/v1/users/userId/dataset:aggregate
+```
+**Request body**: <br/>
+Similar to **Move Minutes**
+just change `"dataTypeName": "com.google.active_minutes"` to `"dataTypeName": com.google.sleep.segment` in **Request body**
+**Request response**: <br/>
+Similar to **Move Minutes**, but `intVal`(from 1-6) for sleep holds its own meaning:
+| Sleep stage type | Value |
+| ------------- | ------------- |
+| Awake (during sleep cycle) | 1 |
+| Sleep | 2 |
+| Out-of-bed | 3 |
+| Light sleep | 4 |
+| Deep sleep | 5 |
+| REM | 6 |
+
+
+
