@@ -2,6 +2,10 @@
 Personal Android/Rest Api note/example for badly written Google Fit official Doc
 PR welcome
 
+Google Playground to test Rest Api:
+
+https://developers.google.com/oauthplayground
+
 ## Move Minute
 **Name**
 ```
